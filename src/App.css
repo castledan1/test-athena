@@ -37,3 +37,13 @@ body {
   border-color: rgba(156, 172, 173);
   background-color: rgba(156, 172, 173, 0.116);
 }
+
+.contentCardImage{
+  max-height : 300px; 
+  overflow : hidden;
+  vertical-align : middle;
+}
+
+.imageOverlay{
+  text-shadow : 2px 2px 4px #000000;
+}

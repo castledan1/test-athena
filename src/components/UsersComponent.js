@@ -27,16 +27,15 @@ class Users extends Component{
     }
 
     renderUser( user ){
-        console.log(user);
         if( user ){
             return(
                 <div className="col-12">
                     <div className="text-center view overlay border border-light border-2" >
                         <Card className="rounded-0">
-                            <div style={{"max-height":"300px", "overflow" : "hidden", "vertical-align": "middle" }}>
+                            <div className="contentCardImage">
                                 <CardImg width="100%" className="opacity-card" src={user.picture.large} alt={user.login.user} />
                             </div>
-                            <CardImgOverlay style={{"text-shadow" : "2px 2px 4px #000000" }} className="align-items-center text-light">
+                            <CardImgOverlay className="align-items-center text-light imageOverlay">
                                 <Media width="35%" className="rounded-circle mt-5 mb-5 border border-2 border-white" object src={user.picture.medium} />
                                 <CardTitle >{user.name.title} {user.name.first} {user.name.last}</CardTitle>
                                 <CardSubtitle>{user.location.country}</CardSubtitle>
@@ -123,7 +122,7 @@ class Users extends Component{
                             just type a name and then select him from the list below</p>
                         </header>
                         <Form>
-                            <FormGroup controlId="formPlaintextPassword">
+                            <FormGroup>
                                 <Label className="col-3 font-weight-bold small" >
                                     Find user:
                                 </Label>
