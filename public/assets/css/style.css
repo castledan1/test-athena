@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
+body {
+  font-family: 'Ubuntu';
+}
+
+.opacity-card{
+  background-color: rgba(245, 245, 245, 0.4);
+  opacity: 0.6;
+}
+
+.border-2 {
+  border-width:2px !important;
+}
+
+.border-3 {
+  border-width:3px !important;
+}
+
+.seletable-user:hover{
+    background-color: red;
+}
