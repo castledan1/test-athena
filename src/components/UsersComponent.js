@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Form, FormGroup, Label, Input, FormText,Card, CardImg, CardImgOverlay, CardText, CardBody, CardTitle, Media, CardSubtitle } from 'reactstrap';
+import { Form, FormGroup, Label, Input,Card, CardImg, CardImgOverlay, CardBody, CardTitle, Media, CardSubtitle } from 'reactstrap';
 
 class Users extends Component{
     constructor(props){
@@ -132,7 +132,7 @@ class Users extends Component{
                             </FormGroup>
                         </Form>
                         {filtered.map(item => {
-                            const classSelectableUser = item == this.state.selectedUser ? "selected seletable-user align-items-center ml-0" : "seletable-user align-items-center ml-0";
+                            const classSelectableUser = item === this.state.selectedUser ? "selected seletable-user align-items-center ml-0" : "seletable-user align-items-center ml-0";
                             return(
                                 <div key={item.login.username} className="col-6 mt-4 d-inline-block align-middle" >
                                     <Media onClick = {() => this.onUserSelect( item ) }  tag="li" className={classSelectableUser}>
